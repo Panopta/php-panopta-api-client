@@ -1,0 +1,12 @@
+{
+    "name": "panopta/php-panopta-api-client",
+    "description": "A thin PHP wrapper for the Panopta API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Panopta",
+            "email": "support@panopta.com"
+        }
+    ],
+    "require": {}
+}
