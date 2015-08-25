@@ -1,6 +1,6 @@
 <?php
 
-include('log4php/Logger.php');
+require __DIR__ . '/vendor/autoload.php';
 
 class ApiClient
 {
@@ -151,7 +151,7 @@ class ApiClient
         if (in_array($statusCode, array('200', '201', '204')))
             $statusReason = 'success';
         else {
-            $reason = $resp['errormessage'];
+            $reason = isset($resp['errormessage']) ? $resp['errormessage'] : null;
             if ($reason) 
                 $statusReason = sprintf('error: %s', $reason);
             else

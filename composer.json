@@ -8,5 +8,8 @@
             "email": "support@panopta.com"
         }
     ],
-    "require": {}
+    "require": {
+        "lib-curl": "^7.35.0",
+        "apache/log4php": "^2.3.0"
+    }
 }
