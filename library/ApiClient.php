@@ -1,6 +1,12 @@
 <?php
+namespace Panopta;
 
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
+
+use Logger;
+use LoggerAppenderDailyFile;
+use LoggerLayoutPattern;
+use LoggerLevel;
 
 class ApiClient
 {

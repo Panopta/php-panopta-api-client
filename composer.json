@@ -8,9 +8,15 @@
             "email": "support@panopta.com"
         }
     ],
+    "autoload": {
+        "psr-4": {"Panopta\\": "library/"}
+    },
     "require": {
         "php": "^5.4.0",
         "lib-curl": "^7.35.0",
         "apache/log4php": "^2.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
     }
 }
