@@ -7,7 +7,15 @@ to active outages and to pull availability statistics for monitored servers.
 
 
 # Installation
-`composer require panopta/php-panopta-api-client`
+Run the [Composer|https://getcomposer.org/] `require` command:
+```bash
+composer require panopta/php-panopta-api-client
+```
+
+Add the Composer autoloader to your project:
+```php
+require 'vendor/autoload.php';
+```
 
 # API Documentation
 Full documentation for the API is available at https://api2.panopta.com/v2/api-docs/.  By 
