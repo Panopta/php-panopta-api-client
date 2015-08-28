@@ -7,7 +7,7 @@ to active outages and to pull availability statistics for monitored servers.
 
 
 # Installation
-Run the [Composer|https://getcomposer.org/] `require` command:
+Run the [Composer](https://getcomposer.org/) `require` command:
 ```bash
 composer require panopta/php-panopta-api-client
 ```
