@@ -41,7 +41,10 @@ $client = Panopta\ApiClient(
 ```php
 $fiveContacts = $client->get('/contact', ['limit' => 5]);
 
-$serversWithACertainFullyQualifiedDomainName = $client->get('/server', ['fqdn' => 'panopta.com']);
+$serversWithACertainFullyQualifiedDomainName = $client->get(
+    '/server',
+    ['fqdn' => 'panopta.com']
+);
 
 $serverFortyTwo = $client->get('/server/42');
 ```
@@ -58,7 +61,10 @@ $newNotificationSchedule = $client->post(
 ```php
 $updatedServerGroup = $client->put(
     '/server_group',
-    ['name' => 'Updated Server Group', 'notification_schedule' => $newNotificationSchedule['url']]
+    [
+        'name' => 'Updated Server Group',
+        'notification_schedule' => $newNotificationSchedule['url']
+    ]
 );
 ```
 
