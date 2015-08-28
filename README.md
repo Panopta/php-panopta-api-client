@@ -28,7 +28,7 @@ The library provides a wrapper around the Panopta REST API, making it easy to is
 GET, POST, PUT and DELETE operations to the API.
 
 ## Instantiate the Panopta API client
-```
+```php
 $client = Panopta\ApiClient(
     'https://api2.panopta.com',
     'your-api-token',
@@ -38,7 +38,7 @@ $client = Panopta\ApiClient(
 );
 ```
 ## GET
-```
+```php
 $fiveContacts = $client->get('/contact', ['limit' => 5]);
 
 $serversWithACertainFullyQualifiedDomainName = $client->get('/server', ['fqdn' => 'panopta.com']);
@@ -47,7 +47,7 @@ $serverFortyTwo = $client->get('/server/42');
 ```
 
 ## POST
-```
+```php
 $newNotificationSchedule = $client->post(
     '/notification_schedule',
     ['name' => 'New Notification Schedule', 'targets' => [$serverFortyTwo['url']]]
@@ -55,7 +55,7 @@ $newNotificationSchedule = $client->post(
 ```
 
 ## PUT
-```
+```php
 $updatedServerGroup = $client->put(
     '/server_group',
     ['name' => 'Updated Server Group', 'notification_schedule' => $newNotificationSchedule['url']]
@@ -63,6 +63,6 @@ $updatedServerGroup = $client->put(
 ```
 
 ## DELETE
-```
+```php
 $client->delete('/contact/1');
 ```
